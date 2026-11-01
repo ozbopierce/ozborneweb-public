@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ozborne Web Design | Twin Falls, Idaho</title>
+<meta name="description" content="Website design and maintenance in Twin Falls, Idaho. I build your site free — you pay a simple monthly plan that keeps it live, secure and updated. From $30/mo." />
+<meta name="theme-color" content="#fdf7ef" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/demos.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232c2118'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffc247'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ── chrome ───────────────────────────────────────────── -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scrollbar" aria-hidden="true"><span id="scroll-fill"></span></div>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span></div>
+<div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__inner">
+    <span class="intro__mark">Ozborne</span>
+    <span class="intro__bar"><i></i></span>
+  </div>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ── nav ──────────────────────────────────────────────── -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__dot"></span>
+    Ozborne Web Design
+  </a>
+
+  <nav class="nav__links" id="nav-links" aria-label="Primary">
+    <a href="#craft">Craft</a>
+    <a href="#rebuild">Rebuild</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="nav__cta" href="#contact">Free teardown</a>
+  </nav>
+
+  <div class="nav__tools">
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></g></svg>
+    </button>
+    <button class="nav__burger" id="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ── hero ─────────────────────────────────────────────── -->
+<section class="hero" id="top">
+  <canvas class="hero__canvas" id="hero-field" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <p class="eyebrow" data-reveal>
+      <span class="eyebrow__dot"></span>
+      Website design &amp; maintenance · Twin Falls, Idaho
+    </p>
+
+    <h1 class="hero__title">
+      <span class="line"><span data-split-words>Websites that</span></span>
+      <span class="line"><span data-split-words>make small</span></span>
+      <span class="line"><span data-split-words>businesses look</span></span>
+      <span class="line"><em data-split-words>big.</em></span>
+    </h1>
+
+    <div class="hero__row">
+      <p class="hero__lede" data-reveal data-reveal-delay="120">
+        I design and hand-code fast, modern sites for Twin Falls businesses —
+        and the build is free. You pay a simple monthly plan that keeps it live,
+        secure and up to date. Everything you're scrolling through was written from scratch.
+      </p>
+      <div class="hero__actions" data-reveal data-reveal-delay="200">
+        <a class="btn btn--primary" href="#rebuild" data-magnetic>
+          <span>See a rebuild</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#contact" data-magnetic>Get a free teardown</a>
+      </div>
+    </div>
+
+    <ul class="hero__facts" data-reveal data-reveal-delay="280">
+      <li><b>$0</b> to start</li>
+      <li><b>No</b> templates</li>
+      <li><b>100%</b> handwritten code</li>
+    </ul>
+  </div>
+
+  <a class="hero__scroll" href="#craft" aria-label="Scroll to next section">
+    <span>Scroll</span>
+    <i></i>
+  </a>
+</section>
+
+<!-- ── marquee ──────────────────────────────────────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Fast pages</span><i>✦</i><span>Mobile first</span><i>✦</i><span>SEO ready</span><i>✦</i><span>Accessible by default</span><i>✦</i><span>Handwritten code</span><i>✦</i><span>Copy that converts</span><i>✦</i>
+    <span>Fast pages</span><i>✦</i><span>Mobile first</span><i>✦</i><span>SEO ready</span><i>✦</i><span>Accessible by default</span><i>✦</i><span>Handwritten code</span><i>✦</i><span>Copy that converts</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ── craft / bento ───────────────────────────────────── -->
+<section class="section craft" id="craft">
+  <header class="section__head">
+    <p class="eyebrow" data-reveal>01 — The craft</p>
+    <h2 class="section__title" data-reveal>
+      Handwritten, <em>not</em> templated.
+    </h2>
+    <p class="section__lede" data-reveal>
+      Below are six things a real build gives you that a $12 theme never will.
+      Every card is live — poke at them.
+    </p>
+  </header>
+
+  <div class="bento">
+
+    <!-- 1. animated gradient orb -->
+    <article class="card card--orb" data-reveal data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Motion</span>
+        <h3>Motion with a reason</h3>
+        <p>Animation that guides attention — never decoration that gets in the way.</p>
+      </div>
+      <div class="orb" data-orb aria-hidden="true">
+        <span class="orb__core"></span>
+        <span class="orb__ring"></span>
+        <span class="orb__ring orb__ring--2"></span>
+      </div>
+    </article>
+
+    <!-- 2. 3D tilt -->
+    <article class="card card--tilt" data-reveal data-reveal-delay="60" data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Depth</span>
+        <h3>Tilt that responds</h3>
+        <p>Real perspective on hover. Move your cursor across the card.</p>
+      </div>
+      <div class="tilt" data-tilt aria-hidden="true">
+        <div class="tilt__layer tilt__layer--back"></div>
+        <div class="tilt__layer tilt__layer--mid">$</div>
+        <div class="tilt__layer tilt__layer--front">BRIGHTLINE</div>
+      </div>
+    </article>
+
+    <!-- 3. scramble type -->
+    <article class="card card--scramble" data-reveal data-reveal-delay="120" data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Type</span>
+        <h3>Type that performs</h3>
+        <p>Custom animation on your headline, tuned to your brand voice.</p>
+      </div>
+      <p class="scramble" data-scramble="ONLINE ORDERS" aria-hidden="true">ONLINE ORDERS</p>
+    </article>
+
+    <!-- 4. responsive toggle -->
+    <article class="card card--device" data-reveal data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Responsive</span>
+        <h3>Built for thumbs first</h3>
+        <p>70% of your visitors are on a phone. Tap the device to see the same layout shrink.</p>
+      </div>
+      <button class="device" data-device type="button" aria-pressed="false" aria-label="Toggle desktop and mobile preview">
+        <span class="device__screen">
+          <span class="device__bar"><i></i><i></i><i></i></span>
+          <span class="device__hero"></span>
+          <span class="device__lines"><i></i><i></i><i></i></span>
+          <span class="device__cta"></span>
+        </span>
+        <span class="device__label">Tap to resize</span>
+      </button>
+    </article>
+
+    <!-- 5. live theming -->
+    <article class="card card--tokens" data-reveal data-reveal-delay="60" data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Systems</span>
+        <h3>One change, every surface</h3>
+        <p>Your brand colours are variables. Drag to re-theme this card instantly.</p>
+      </div>
+      <div class="tokens">
+        <div class="tokens__preview" data-token-preview>
+          <span class="tokens__chip">Brand</span>
+          <span class="tokens__bars"><i></i><i></i><i></i></span>
+        </div>
+        <label class="tokens__control">
+          <span class="visually-hidden">Brand hue</span>
+          <input type="range" min="0" max="360" value="74" data-hue />
+        </label>
+      </div>
+    </article>
+
+    <!-- 6. counters -->
+    <article class="card card--stats" data-reveal data-reveal-delay="120" data-spotlight>
+      <div class="card__body">
+        <span class="card__tag">Speed</span>
+        <h3>Fast by default</h3>
+        <p>No page-builder bloat. Just the code your site actually needs.</p>
+      </div>
+      <dl class="stats">
+        <div><dt>Lighthouse</dt><dd data-count="100" data-suffix="">0</dd></div>
+        <div><dt>Load</dt><dd data-count="0.4" data-decimals="1" data-suffix="s">0</dd></div>
+        <div><dt>Dependencies</dt><dd data-count="0" data-suffix="">0</dd></div>
+      </dl>
+    </article>
+
+  </div>
+</section>
+
+<!-- ── before / after ──────────────────────────────────── -->
+<section class="section rebuild" id="rebuild">
+  <header class="section__head section__head--split">
+    <div>
+      <p class="eyebrow" data-reveal>02 — The rebuild</p>
+      <h2 class="section__title" data-reveal>
+        Old site out.<br /><em>New business in.</em>
+      </h2>
+    </div>
+    <p class="section__lede" data-reveal>
+      Visitors decide whether to trust you in about 50&nbsp;milliseconds.
+      That's your homepage. Drag the handle — this is the same business, one rebuild later.
+    </p>
+  </header>
+
+  <div class="compare" id="compare" data-compare>
+    <div class="compare__pane compare__pane--before" data-pane-before>
+      <div class="retro">
+        <div class="retro__bar">
+          <span class="retro__logo">Mike's Plumbing &amp; Heating</span>
+          <span class="retro__nav">Home | About Us | Services | Contact | Guestbook</span>
+        </div>
+        <div class="retro__ticker"><span>★ WELCOME TO OUR WEBSITE ★ CALL US TODAY ★ BEST PRICES IN TOWN ★ EST. 1994 ★</span></div>
+        <div class="retro__body">
+          <h4>Welcome to Mike's Plumbing &amp; Heating!!!</h4>
+          <p class="retro__small">Best viewed in Internet Explorer 6 at 800x600</p>
+          <p><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80'%3E%3Crect width='120' height='80' fill='%23d9d9d9'/%3E%3Cpath d='M0 0l120 80M120 0L0 80' stroke='%23999' stroke-width='2'/%3E%3C/svg%3E" alt="Plumber" class="retro__img" />
+            We are a family owned plumbing and heating company serving the area since 1994. We do all types of plumbing work, boiler installation, bathrooms and general repairs. Call us for a free estimate. We are fully insured and offer competitive rates.</p>
+          <p><a href="#contact">Click here</a> to email us!!! Or call <span class="retro__phone">555-0199</span></p>
+          <ul class="retro__list">
+            <li>Bathroom Installations</li>
+            <li>Boiler Repairs</li>
+            <li>Leaks &amp; Blockages</li>
+            <li>Emergency Callout</li>
+          </ul>
+          <p class="retro__blink">★ UNDER CONSTRUCTION ★</p>
+          <p class="retro__counter">You are visitor number: <span>000487</span></p>
+        </div>
+      </div>
+      <span class="compare__label compare__label--before">Before · 2011</span>
+    </div>
+
+    <div class="compare__pane compare__pane--after" data-pane-after>
+      <!-- Photo: assets/img/job.webp, inlined by build.mjs at build time.
+           Current file: Pexels #29226620, "Professional Plumber Installing a
+           Radiator Pipe" (Pexels licence: free for commercial use, no
+           attribution required — credited anyway in README.md).
+           Swap the file in assets/img/ to change it. -->
+      <div class="modern">
+        <div class="modern__bar">
+          <span class="modern__logo">Mike's Plumbing <b>&amp; Heating</b></span>
+          <span class="modern__nav"><i>Services</i><i>Work</i><i>Areas</i></span>
+          <span class="modern__cta"><b>Call</b> (555) 0199</span>
+        </div>
+
+        <div class="modern__hero">
+          <div class="modern__copy">
+            <p class="modern__eyebrow">Emergency plumbers · 24/7 callout</p>
+            <h4>Leaks fixed today, not next Thursday.</h4>
+            <p class="modern__sub">A fixed price agreed before we start, gas-safe engineers, and the house left cleaner than we found it.</p>
+            <div class="modern__row">
+              <span class="modern__btn">Book a visit</span>
+              <span class="modern__ghost">See our work</span>
+            </div>
+            <p class="modern__meta"><b>4.9</b> from 212 reviews · insured &amp; guaranteed</p>
+          </div>
+          <figure class="modern__shot">
+            <img class="modern__photo" src="assets/img/job.webp" width="1200" height="800" alt="Plumber in workwear fitting a new valve to a radiator" />
+            <figcaption>Recent job · radiator valve replaced, system balanced</figcaption>
+          </figure>
+        </div>
+
+        <div class="modern__cards">
+          <span>Leak repairs</span>
+          <span>Boiler servicing</span>
+          <span>Bathrooms</span>
+        </div>
+      </div>
+<span class="compare__label compare__label--after">After · rebuilt</span>
+    </div>
+
+    <div class="compare__handle" data-compare-handle role="slider" tabindex="0"
+         aria-label="Compare old and rebuilt site" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <span class="compare__grip"><i></i><i></i></span>
+    </div>
+  </div>
+  <p class="compare__hint">Drag · or use ← → keys</p>
+
+  <div class="proof" data-reveal>
+    <p class="proof__lede">
+      <b>Why a rebuild pays for itself.</b> Nobody reads a dated site — they judge it in a
+      blink and leave. These are published studies, not a pitch:
+    </p>
+    <div class="proof__stats">
+      <div>
+        <p class="proof__num">50<i>ms</i></p>
+        <p class="proof__what">is all a visitor needs to form a first impression of your site.</p>
+        <span class="proof__src">Lindgaard et al., 2006</span>
+      </div>
+      <div>
+        <p class="proof__num">53<i>%</i></p>
+        <p class="proof__what">of mobile visits are abandoned when a page takes longer than 3 seconds.</p>
+        <span class="proof__src">Google, 2016</span>
+      </div>
+      <div>
+        <p class="proof__num">8.4<i>%</i></p>
+        <p class="proof__what">more conversions for every 0.1s faster a mobile site loads.</p>
+        <span class="proof__src">Deloitte, 2020</span>
+      </div>
+    </div>
+  </div>
+  <p class="proof__note">Averages from published research — your mileage depends on your trade and your town.</p>
+</section>
+
+<!-- ── process ──────────────────────────────────────────── -->
+<section class="section process" id="process">
+  <div class="process__sticky">
+    <p class="eyebrow" data-reveal>03 — Process</p>
+    <h2 class="section__title" data-reveal>
+      Two weeks,<br /><em>four steps.</em>
+    </h2>
+    <p class="process__note" data-reveal>
+      No jargon, no monthly agency retainer, no 40-page decks.
+      You talk to me, the person writing the code.
+    </p>
+    <div class="process__progress" aria-hidden="true"><span data-process-fill></span></div>
+  </div>
+
+  <ol class="steps">
+    <li class="step" data-step>
+      <span class="step__num">01</span>
+      <h3>Teardown</h3>
+      <p>A 20-minute call, then a free screen-recorded teardown of your current site: what's costing you calls, and what I'd do about it. No obligation.</p>
+    </li>
+    <li class="step" data-step>
+      <span class="step__num">02</span>
+      <h3>Blueprint</h3>
+      <p>We agree the pages, the copy direction and the one action you want visitors to take. You approve a single-clickable design before a line of code is written.</p>
+    </li>
+    <li class="step" data-step>
+      <span class="step__num">03</span>
+      <h3>Build</h3>
+      <p>Hand-coded pages, your photos and copy, real browser testing on phones, tablets and desktops. You watch it come together on a private link.</p>
+    </li>
+    <li class="step" data-step>
+      <span class="step__num">04</span>
+      <h3>Launch &amp; care</h3>
+      <p>Domain, hosting, Google Business profile and analytics set up. Then your monthly plan covers the edits, backups, security updates and uptime checks.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ── pricing ──────────────────────────────────────────── -->
+<section class="section pricing" id="pricing">
+  <header class="section__head">
+    <p class="eyebrow" data-reveal>04 — Pricing</p>
+    <h2 class="section__title" data-reveal>The site is free. <em>Keeping it live isn't.</em></h2>
+    <p class="section__lede" data-reveal>
+      Design, build and launch cost you nothing. You pick a monthly plan that keeps the site
+      online, secure and up to date — and when you need a change, you email me, not a helpdesk.
+    </p>
+  </header>
+
+  <div class="plans">
+    <article class="plan" data-reveal data-spotlight>
+      <h3 class="plan__name">Basic</h3>
+      <p class="plan__for">For a business that just needs to exist online — properly — and stay that way.</p>
+      <p class="plan__price"><span>$</span>30<span class="plan__plus">/mo</span></p>
+      <p class="plan__time">No setup fee · 12-month minimum</p>
+      <ul class="plan__list">
+        <li>Site design, build &amp; launch included</li>
+        <li>Hosting, SSL security &amp; backups</li>
+        <li>1 small edit a month — about 15 minutes</li>
+        <li>Hours, phone, prices or one photo</li>
+        <li>Edit requests answered in 3–5 business days</li>
+      </ul>
+      <a class="btn btn--ghost btn--full" href="#contact" data-plan="Basic">Start with Basic</a>
+    </article>
+
+    <article class="plan plan--featured" data-reveal data-reveal-delay="80" data-spotlight>
+      <span class="plan__badge">Most picked</span>
+      <h3 class="plan__name">Standard</h3>
+      <p class="plan__for">For a business that changes its prices, hours or photos more than once a month.</p>
+      <p class="plan__price"><span>$</span>50<span class="plan__plus">/mo</span></p>
+      <p class="plan__time">No setup fee · 12-month minimum</p>
+      <ul class="plan__list">
+        <li>Everything in Basic</li>
+        <li>3 small edits a month</li>
+        <li>Edit requests answered in 1–2 business days</li>
+        <li>Security &amp; software updates</li>
+        <li>Same free build, same free launch</li>
+      </ul>
+      <a class="btn btn--primary btn--full" href="#contact" data-plan="Standard">Choose Standard</a>
+    </article>
+
+    <article class="plan" data-reveal data-reveal-delay="160" data-spotlight>
+      <h3 class="plan__name">Pro</h3>
+      <p class="plan__for">For a business that lives off its Google listing and can't wait three days for an edit.</p>
+      <p class="plan__price"><span>$</span>100<span class="plan__plus">/mo</span></p>
+      <p class="plan__time">No setup fee · 12-month minimum</p>
+      <ul class="plan__list">
+        <li>Everything in Standard</li>
+        <li>Unlimited reasonable edits</li>
+        <li>Same-day or next-day turnaround</li>
+        <li>Monthly site check-up</li>
+        <li>Google Business Profile upkeep</li>
+      </ul>
+      <a class="btn btn--ghost btn--full" href="#contact" data-plan="Pro">Choose Pro</a>
+    </article>
+  </div>
+
+  <p class="pricing__care" data-reveal>
+    <b>12-month minimum</b> on every plan, and edits don't roll over. A small edit means text or
+    image changes on existing pages — new pages and redesigns are quoted at <b>$50–75/hour</b>
+    before I start. Your domain is registered in <b>your name</b> (about $15 a year). Send requests
+    to one email address or the form above so nothing gets lost.
+  </p>
+</section>
+
+<!-- ── faq ──────────────────────────────────────────────── -->
+<section class="section faq" id="faq">
+  <header class="section__head section__head--split">
+    <div>
+      <p class="eyebrow" data-reveal>05 — Questions</p>
+      <h2 class="section__title" data-reveal>The things<br /><em>everyone asks.</em></h2>
+    </div>
+    <p class="section__lede" data-reveal>
+      Still not sure? Call me. I'd rather spend ten minutes answering questions than sell you something you don't need.
+    </p>
+  </header>
+
+  <div class="accordion" data-accordion>
+    <div class="acc">
+      <button class="acc__q" type="button" aria-expanded="false" id="acc-1" aria-controls="acc-p-1">
+        <span>What if I already have a website?</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc__panel" id="acc-p-1" role="region" aria-labelledby="acc-1">
+        <div class="acc__inner">
+          <p>Good — most of my work is rebuilds. I keep your photos, your reviews and your domain, and replace the part that's losing you customers: the design, the speed and the clarity. Your old site stays live until the new one is ready to swap in.</p>
+        </div>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc__q" type="button" aria-expanded="false" id="acc-2" aria-controls="acc-p-2">
+        <span>Do I need to write the content?</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc__panel" id="acc-p-2" role="region" aria-labelledby="acc-2">
+        <div class="acc__inner">
+          <p>No. I'll interview you for 20 minutes, then write a first draft in plain English. You correct anything I got wrong. Most clients find the words are the easiest part once someone asks the right questions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc__q" type="button" aria-expanded="false" id="acc-3" aria-controls="acc-p-3">
+        <span>Will it work on phones?</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc__panel" id="acc-p-3" role="region" aria-labelledby="acc-3">
+        <div class="acc__inner">
+          <p>Every build is designed on a phone first, then scaled up. I test on real iOS and Android devices, not just a browser resized in a window. If a form is hard to fill with one thumb, it gets fixed before launch.</p>
+        </div>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc__q" type="button" aria-expanded="false" id="acc-4" aria-controls="acc-p-4">
+        <span>Who owns the website?</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc__panel" id="acc-p-4" role="region" aria-labelledby="acc-4">
+        <div class="acc__inner">
+          <p>Your domain is registered in your business name, never mine, and your content, photos and logo are yours. While your plan is active I run the hosting and do the maintenance, so there's no page builder licence and nothing for you to update. If you ever stop, the domain and your content go with you.</p>
+        </div>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc__q" type="button" aria-expanded="false" id="acc-5" aria-controls="acc-p-5">
+        <span>How does payment work?</span><i aria-hidden="true"></i>
+      </button>
+      <div class="acc__panel" id="acc-p-5" role="region" aria-labelledby="acc-5">
+        <div class="acc__inner">
+          <p>Nothing up front — the design, the build and the launch are free. After that it's a flat monthly plan, billed every month, with a 12-month minimum. The fee covers your hosting, SSL, backups, security updates and the edits included in your plan. No deposit, no setup fee, no invoice for the site itself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── contact ──────────────────────────────────────────── -->
+<section class="section contact" id="contact">
+  <div class="contact__glow" aria-hidden="true"></div>
+  <div class="contact__inner">
+    <div class="contact__left">
+      <p class="eyebrow" data-reveal>06 — Next step</p>
+      <h2 class="contact__title" data-reveal>
+        Send me your<br /><em>current site.</em>
+      </h2>
+      <p class="contact__lede" data-reveal>
+        I'll reply within one working day with a two-minute video of what I'd change and which plan fits. Free, no obligation, no follow-up sequence.
+      </p>
+      <ul class="contact__list" data-reveal>
+        <li><a href="mailto:ozbornewebdesign@gmail.com">ozbornewebdesign@gmail.com</a></li>
+        <li><a href="tel:+12088087197">(208) 808-7197</a></li>
+        <li>Twin Falls, Idaho</li>
+        <li>Mon–Fri, 9–5 · replies in under 24h</li>
+      </ul>
+    </div>
+
+    <form class="form" id="teardown-form" novalidate data-reveal>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Sam Rivera" required />
+        <p class="field__err" data-err-for="f-name"></p>
+      </div>
+      <div class="field">
+        <label for="f-business">Business name</label>
+        <input id="f-business" name="business" type="text" autocomplete="organization" placeholder="Rivera Plumbing" required />
+        <p class="field__err" data-err-for="f-business"></p>
+      </div>
+      <div class="field">
+        <label for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" placeholder="sam@riveraplumbing.com" required />
+        <p class="field__err" data-err-for="f-email"></p>
+      </div>
+      <div class="field">
+        <label for="f-site">Current website <span class="field__opt">optional</span></label>
+        <input id="f-site" name="site" type="text" inputmode="url" placeholder="riveraplumbing.co.uk" />
+      </div>
+      <div class="field field--full">
+        <label for="f-note">What's bugging you about it?</label>
+        <textarea id="f-note" name="note" rows="3" placeholder="It looks dated on phones and I don't think we get any enquiries from it."></textarea>
+      </div>
+      <div class="field field--full">
+        <label class="check">
+          <input type="checkbox" id="f-plan" name="plan" value="" />
+          <span>I'd like pricing for a specific package</span>
+        </label>
+      </div>
+      <button class="btn btn--primary btn--full form__submit" type="submit" data-magnetic>
+        <span class="form__label">Request my teardown</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+      </button>
+      <p class="form__note">No newsletter, no CRM sequence. Just a reply from a person.</p>
+      <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ── footer ───────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__top">
+    <a class="footer__brand" href="#top">Ozborne Web Design<span>.</span></a>
+    <p class="footer__line">Handwritten websites for Twin Falls businesses that show up in person.</p>
+  </div>
+  <div class="footer__grid">
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:ozbornewebdesign@gmail.com">ozbornewebdesign@gmail.com</a>
+      <a href="tel:+12088087197">(208) 808-7197</a>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="#craft">Craft</a>
+      <a href="#rebuild">Rebuild</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div>
+      <h4>Local time</h4>
+      <p class="footer__clock" id="clock">--:--:--</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© <span id="year">2026</span> Ozborne Web Design. All rights reserved.</p>
+    <p class="footer__made">Designed &amp; coded by hand. No template, no page builder.</p>
+    <button class="footer__top-btn" id="to-top" type="button">
+      Back to top
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
